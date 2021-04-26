@@ -1,34 +1,27 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
-import { fetchJSON } from "./http";
-import { ErrorView } from "./ErrorView";
+import {useLoading} from "./useLoading";
 
-export function ProfilePage() {
-    const [profile, setProfile] = useState();
-    const [error, setError] = useState();
-    const [loading, setLoading] = useState(true);
+export function ProfilePage({loadProfile}){
+    const {loading, error, data} = useLoading( async () => await loadProfile());
 
-    useEffect(async () => {
-        try {
-            setProfile(await fetchJSON("http://localhost:3000/api/profile"));
-        } catch (e) {
-            setError(e);
-        } finally {
-            setLoading(false);
-        }
-    }, []);
+    console.log(loadProfile)
 
-    if (error) {
-        return <ErrorView error={error} />;
-    }
-    if (loading) {
-        return <div>Loading...</div>;
+    if(loading){
+        return <div> Loading </div>
     }
 
-    return (
-        <>
-            <h1>Profile page</h1>
-            <div>{profile.message}</div>
-        </>
-    );
-}
+    if(error){
+        return (
+            <div>
+                <h1>An error occurred</h1>
+                <div>{error.toString()}</div>
+            </div>
+        )
+    }
+
+    return ( <div>
+        <h1>Profile</h1>
+        <div>{data.name}</div>
+           </div> )
+
+    }
