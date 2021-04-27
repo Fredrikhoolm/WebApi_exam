@@ -1,4 +1,4 @@
-import { LoadingView } from "../src/client/LoadingView";
+import { LoadingView } from "../src/client/Components/LoadingView";
 import React from "react";
 import ReactDOM from "react-dom";
 import { act } from "react-dom/test-utils";

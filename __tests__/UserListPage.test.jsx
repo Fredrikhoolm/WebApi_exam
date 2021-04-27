@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { act } from "react-dom/test-utils";
 import { MemoryRouter } from "react-router";
-import {UserListPage} from "../src/client/UserListPage";
+import {UserListPage} from "../src/client/Pages/UserListPage";
 
 
 async function renderForTest(child) {

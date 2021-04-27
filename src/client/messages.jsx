@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoading } from "./useLoading";
-import { ErrorView } from "./errorView";
-import { LoadingView } from "./loadingView";
+import { ErrorView } from "./Components/ErrorView";
+import { LoadingView } from "./Components/LoadingView";
 
 export function Messages({ messageApi }) {
     const { data: messages, error, loading, reload } = useLoading(

@@ -1,15 +1,15 @@
 import { BrowserRouter, Link } from "react-router-dom";
 import {Redirect, Route, Switch} from "react-router";
 import * as React from "react";
-import { ChatPage } from "./ChatPage";
-import {CreateUserPage} from "./CreateUserPage";
+import { ChatPage } from "./Pages/ChatPage";
+import {CreateUserPage} from "./Pages/CreateUserPage";
 import {fetchJson, fetchJSON, postJSON} from "./http";
-import {UserListPage} from "./UserListPage";
-import {EditUserPage} from "./EditUserPage";
-import {ProfilePage} from "./ProfilePage";
+import {UserListPage} from "./Pages/UserListPage";
+import {EditUserPage} from "./Pages/EditUserPage";
+import {ProfilePage} from "./Pages/ProfilePage";
 import {useState} from "react";
-import {LoginPage} from "./LoginPage";
-import {LoginCallbackPage} from "./LoginCallbackPage";
+import {LoginPage} from "./Pages/LoginPage";
+import {LoginCallbackPage} from "./Pages/LoginCallbackPage";
 
 export function Application() {
 

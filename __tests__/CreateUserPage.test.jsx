@@ -2,7 +2,7 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import { act, Simulate } from "react-dom/test-utils";
 import { MemoryRouter } from "react-router";
-import { CreateUserPage } from "../src/client/CreateUserPage";
+import { CreateUserPage } from "../src/client/Pages/CreateUserPage";
 
 async function renderForTest(child) {
     const container = document.createElement("div");

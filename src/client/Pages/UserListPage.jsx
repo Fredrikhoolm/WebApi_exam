@@ -1,8 +1,8 @@
 import React from "react";
-import { LoadingView } from "./LoadingView";
+import { LoadingView } from "../Components/LoadingView";
 import { Link } from "react-router-dom";
-import { useLoading } from "./useLoading";
-import { ErrorView } from "./ErrorView";
+import { useLoading } from "../useLoading";
+import { ErrorView } from "../Components/ErrorView";
 
 export function UserListPage({  userApi }) {
     const { data: user, error, loading, reload } = useLoading(

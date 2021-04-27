@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import * as React from "react";
 import { MemoryRouter } from "react-router";
 import { act, Simulate } from "react-dom/test-utils";
-import {EditUserPage} from "../src/client/EditUserPage";
+import {EditUserPage} from "../src/client/Pages/EditUserPage";
 
 
 
