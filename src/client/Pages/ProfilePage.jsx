@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useLoading} from "../useLoading";
+import {useLoading} from "../lib/useLoading";
 
 export function ProfilePage({loadProfile}){
     const {loading, error, data} = useLoading( async () => await loadProfile());

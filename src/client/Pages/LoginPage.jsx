@@ -1,5 +1,5 @@
 import * as React from "react";
-import { fetchJSON } from "../http";
+import { fetchJSON } from "../lib/http";
 
 export function randomString(length) {
     const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqrstuvwxyz1234567890";

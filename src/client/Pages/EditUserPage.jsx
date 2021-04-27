@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router";
 import { LoadingView } from "../Components/LoadingView";
 import { InputField } from "../Components/InputField";
-import { useLoading } from "../useLoading";
+import { useLoading } from "../lib/useLoading";
 import { ErrorView } from "../Components/ErrorView";
 
 function EditUserForm({ user, onSubmit }) {

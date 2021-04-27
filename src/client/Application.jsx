@@ -3,7 +3,7 @@ import {Redirect, Route, Switch} from "react-router";
 import * as React from "react";
 import { ChatPage } from "./Pages/ChatPage";
 import {CreateUserPage} from "./Pages/CreateUserPage";
-import {fetchJSON, postJSON} from "./http";
+import {fetchJSON, postJSON} from "./lib/http";
 import {UserListPage} from "./Pages/UserListPage";
 import {EditUserPage} from "./Pages/EditUserPage";
 import {ProfilePage} from "./Pages/ProfilePage";

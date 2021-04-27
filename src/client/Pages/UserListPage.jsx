@@ -1,7 +1,7 @@
 import React from "react";
 import { LoadingView } from "../Components/LoadingView";
 import { Link } from "react-router-dom";
-import { useLoading } from "../useLoading";
+import { useLoading } from "../lib/useLoading";
 import { ErrorView } from "../Components/ErrorView";
 
 export function UserListPage({  userApi }) {

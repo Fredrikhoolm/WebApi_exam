@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`show user on page can show error message 1`] = `"<div><h1>An error occurred</h1><div>Error: Failed to load</div></div>"`;
+
+exports[`show user on page shows users in a list 1`] = `"<h1 id=\\"header-title\\">List user</h1><div id=\\"list-user\\"><li><a href=\\"/user/1/edit\\">Fredrik</a></li></div>"`;
