@@ -62,6 +62,11 @@ export function Application() {
                     <div id="list">
 
                     <ul>
+
+                        <li id="list-4">
+                            <Link to={"/login"}>Login</Link>
+                        </li>
+
                         <li id="list-1" >
                             <Link to={"/profile"} >Profile</Link>
                         </li>
@@ -74,10 +79,6 @@ export function Application() {
                             <Link to={"/user"}>User</Link>
                         </li>
 
-                        <li id="list-4">
-                            <Link to={"/login"}>Login</Link>
-                        </li>
-
                         <li id="list-5">
                             <Link to={"/chat"}>Chat</Link>
                         </li>
@@ -85,7 +86,8 @@ export function Application() {
                  </div>
                 </Route>
                 <Route path={"/profile"}>
-                    <ProfilePage loadProfile={loadProfile}/>
+                    {!access_token ? (<Redirect to ={"/"}/>) :
+                   (<ProfilePage loadProfile={loadProfile}/>)}
                 </Route>
                 <Route path={"/create"}>
                     {!access_token ? (<Redirect to ={"/"}/>) :
