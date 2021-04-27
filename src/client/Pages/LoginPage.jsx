@@ -1,9 +1,8 @@
 import * as React from "react";
-import { fetchJson } from "../http";
+import { fetchJSON } from "../http";
 
 export function randomString(length) {
-    const possible =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqrstuvwxyz1234567890";
+    const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqrstuvwxyz1234567890";
     let result = "";
     for (let i = 0; i < length; i++) {
         result += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -15,7 +14,7 @@ export function LoginPage({identityProvider}){
     const {discoveryURL, client_id} = identityProvider;
 
     async function handleLogin(){
-        const {authorization_endpoint} = await fetchJson(discoveryURL)
+        const {authorization_endpoint} = await fetchJSON(discoveryURL)
 
         const state = randomString(30);
         const loginState = { state };
@@ -36,7 +35,7 @@ export function LoginPage({identityProvider}){
     return (
 
         <>
-        <h1 id="login-header">Login</h1>
+        <h1 id="header-title">Login</h1>
         <button onClick={handleLogin} id="login-button">Login with a google account</button>
         </>
 

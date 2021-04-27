@@ -18,7 +18,7 @@ function ChatLoginPage({ onLogin }) {
     }
     return (
         <>
-                <h1 id="login-header">Enter a chat name</h1>
+                <h1 id="header-title">Enter a chat name</h1>
 
             <form onSubmit={handleSubmit} id="login-chat-form">
                 <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}/>
@@ -64,7 +64,7 @@ export function ChatView({ username }) {
 
     return (
         <>
-            <h1 id="login-header">Chat page</h1>
+            <h1 id="header-title">Chat page</h1>
             <div id="chat">
                 {chatLog.map(({ message, id, username }) => (
                     <div key={id}>

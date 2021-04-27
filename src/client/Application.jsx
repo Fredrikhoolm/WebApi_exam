@@ -3,7 +3,7 @@ import {Redirect, Route, Switch} from "react-router";
 import * as React from "react";
 import { ChatPage } from "./Pages/ChatPage";
 import {CreateUserPage} from "./Pages/CreateUserPage";
-import {fetchJson, fetchJSON, postJSON} from "./http";
+import {fetchJSON, postJSON} from "./http";
 import {UserListPage} from "./Pages/UserListPage";
 import {EditUserPage} from "./Pages/EditUserPage";
 import {ProfilePage} from "./Pages/ProfilePage";
@@ -21,7 +21,7 @@ export function Application() {
     };
 
    async  function loadProfile(){
-        return fetchJson("/api/profile", {
+        return fetchJSON("/api/profile", {
             headers: {
             ...(access_token ? {Authorization: `Bearer ${access_token}`} : {}),
             },
@@ -57,22 +57,27 @@ export function Application() {
 
                 <Route path={"/"} exact>
 
-                    <h1 id="header-home">Home page</h1>
+                    <h1 id="header-title">Home page</h1>
 
                     <div id="list">
+
                     <ul>
                         <li id="list-1" >
                             <Link to={"/profile"} >Profile</Link>
                         </li>
+
                         <li id="list-2">
                             <Link to={"/create"}>Create</Link>
                         </li>
+
                         <li id="list-3">
                             <Link to={"/user"}>User</Link>
                         </li>
+
                         <li id="list-4">
                             <Link to={"/login"}>Login</Link>
                         </li>
+
                         <li id="list-5">
                             <Link to={"/chat"}>Chat</Link>
                         </li>

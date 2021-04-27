@@ -13,7 +13,7 @@ export function CreateUserPage({ userApi: userApi }) {
 
     return (<>
 
-            <h1 id="create-header">Create new User</h1>
+            <h1 id="header-title">Create new User</h1>
 
         <div id="create-form">
         <form onSubmit={submit}>
