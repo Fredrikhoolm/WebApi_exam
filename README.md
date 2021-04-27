@@ -8,10 +8,15 @@ Jeg har laget en applikasjon hvor brukeren blir først sendt til en start side. 
 De forskjellige funksjonene er : 
 
 •	Logge inn med google konto.
+
 •	Profilside, som viser informasjon hentet fra Google kontoen.
+
 •	Lage andre brukere på nettsiden.
+
 •	Liste ut brukerene som er laget.
+
 •	Redigere brukerene ved å trykke på navnet til brukeren.
+
 •	Chatfunksjon, hvor brukeren bestemmer eget navn og kan sende og motta meldinger.
 
 Funksjonene på nettsiden er fra start av låst, og ikke tilgjengelig for brukeren, før man har logget seg inn med Google kontoen sin.
