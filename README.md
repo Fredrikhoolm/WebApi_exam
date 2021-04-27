@@ -34,4 +34,4 @@ Prosjektet er bygget opp fra grunnen av ved hjelp av React rammeverk.  NodeJs, E
 
 <h3> Testing </h3>
 
-Når jeg var ferdig med prosjektet testet jeg prosjektet opp mot coverage for å få ut informasjon ang hvor mange test coverage prosent jeg hadde. Før refacorering var den på 36%, men etter refaktorering ble den ned på 29%. Jeg synes selv det er bedre å ha lavere test coverage, men bedre og mer gjennbrukbar kode.
+Når jeg var ferdig med prosjektet testet jeg prosjektet opp mot coverage for å få ut informasjon ang hvor mange test coverage prosent jeg hadde. Før refacorering var den på 36%, men etter refaktorering ble den ned på 29%. Jeg synes selv det er bedre å ha lavere test coverage, men bedre og mer gjennbrukbar kode. 

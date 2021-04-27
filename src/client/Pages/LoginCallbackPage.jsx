@@ -14,7 +14,7 @@ export function LoginCallbackPage({ onAccessToken }) {
         const { access_token, state } = hash;
 
         if (state !== loginState.state) {
-            alert("Why are you here?");
+            alert("This is not ok");
             return;
         }
 
