@@ -15,7 +15,7 @@ async function renderForTest(child) {
 
 const userApi = {
     listUser: async () => [
-        { id: 1, firstName: "Fredrik", lastName: "Holm", email: "fredrik@hotmail.com" },
+        { id: 1, firstName: "Fredrik", lastName: "Jensen", email: "fredrik@hotmail.com" },
     ],
 };
 

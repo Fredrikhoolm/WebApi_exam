@@ -5,7 +5,7 @@ const user = [
     {
         id: 1,
         firstName: "Fredrik",
-        lastName: "Holm",
+        lastName: "Jensen",
         email: "fredrik@hotmail.com",
     },
     {

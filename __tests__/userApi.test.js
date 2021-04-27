@@ -7,7 +7,7 @@ app.use(require("body-parser").json());
 app.use(require("../src/server/userApi"));
 
 describe("user API", () => {
-    it("can return the predefined books", async () => {
+    it("can return the predefined users", async () => {
         await request(app)
             .get("")
             .then((response) => {
