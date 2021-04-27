@@ -31,3 +31,7 @@ Prosjektet er bygget opp fra grunnen av ved hjelp av React rammeverk.  NodeJs, E
 * Pages filene finner man i src/pages mappen
 * Test filene finner man i src/tests mappen
 * Resterende filler ligger direkte inn i src mappen
+
+<h3> Testing </h3>
+
+Når jeg var ferdig med prosjektet testet jeg prosjektet opp mot coverage for å få ut informasjon ang hvor mange test coverage prosent jeg hadde. Før refacorering var den på 36%, men etter refaktorering ble den ned på 29%. Jeg synes selv det er bedre å ha lavere test coverage, men bedre og mer gjennbrukbar kode.

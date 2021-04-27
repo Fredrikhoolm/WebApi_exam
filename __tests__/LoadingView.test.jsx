@@ -14,3 +14,4 @@ describe("loading view", () => {
         expect(container.innerHTML).toMatchSnapshot();
     });
 });
+
