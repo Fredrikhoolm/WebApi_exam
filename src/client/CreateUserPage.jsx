@@ -15,7 +15,8 @@ export function CreateUserPage({ userApi: userApi }) {
 
             <h1 id="create-header">Create new User</h1>
 
-        <form onSubmit={submit} id="create-form">
+        <div id="create-form">
+        <form onSubmit={submit}>
 
             <InputField label={"First name"} value={firstName} onChangeValue={setFirstName} />
             <br/>
@@ -25,6 +26,7 @@ export function CreateUserPage({ userApi: userApi }) {
             <br/>
             <button>Submit</button>
         </form>
+        </div>
         </>
     );
 }

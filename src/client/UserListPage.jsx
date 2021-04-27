@@ -20,12 +20,15 @@ export function UserListPage({  userApi }) {
     return (
         <>
             <h1 id="user-header">List user</h1>
+
             <div id="list-user">
+
             {user.map(({ id, firstName }) => (
 
                 <li key={id}>
                     <Link to={`/user/${id}/edit`}>{firstName}</Link>
                 </li>
+
             ))}
             </div>
         </>

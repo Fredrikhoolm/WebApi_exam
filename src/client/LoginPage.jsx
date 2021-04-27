@@ -37,7 +37,7 @@ export function LoginPage({identityProvider}){
 
         <>
         <h1 id="login-header">Login</h1>
-        <button onClick={handleLogin} id="login-button">Login</button>
+        <button onClick={handleLogin} id="login-button">Login with a google account</button>
         </>
 
     )

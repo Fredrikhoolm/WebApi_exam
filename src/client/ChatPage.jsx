@@ -18,11 +18,11 @@ function ChatLoginPage({ onLogin }) {
     }
     return (
         <>
-            <h1 id="login-header">Please log in</h1>
+                <h1 id="login-header">Enter a chat name</h1>
 
             <form onSubmit={handleSubmit} id="login-chat-form">
                 <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}/>
-                <button>Login</button>
+                <button>Enter</button>
             </form>
         </>
     );

@@ -1,11 +1,15 @@
 body {
-    background-color: powderblue;
+    background-color: #40798C;
 }
 
 .first-page{
     display: grid;
     grid-template-columns: 150px 150px auto 150px 150px;
     grid-template-rows: 100px 100px 33px 33px 33px 100px 100px;
+    background: #9EC1A3;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
 }
 
@@ -42,7 +46,7 @@ body {
 
 }
 
-#list-1{
+#list-1 {
     list-style-type: none;
 }
 #list-2{
@@ -88,13 +92,21 @@ body {
     justify-content: center;
     font-size: 40px;
 }
+#profile-p{
+    grid-column: 3 / 4 ;
+    grid-row: 3 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
 
 #google-name{
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 3 / 4 ;
-    grid-row: 4 / 6 ;
+    grid-row: 6 ;
     font-size: 35px;
 
 }
@@ -109,7 +121,7 @@ body {
 }
 
 #create-form{
-
+    display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 3 / 4 ;
@@ -139,12 +151,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+
 }
 
 #edit-form{
     grid-column: 3  ;
-    grid-row: 3  ;
+    grid-row: 4  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #login-chat-form{
@@ -165,7 +180,8 @@ body {
 
 }
 #chat{
-    overflow: scroll;
+
+    overflow: auto;
     grid-column: 3;
     grid-row: 2 / 6;
 

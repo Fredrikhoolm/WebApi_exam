@@ -22,6 +22,9 @@ export function ProfilePage({loadProfile}){
     return ( <>
         <h1 id="profile-header">Profile</h1>
         <div id="google-name">{data.name}</div>
+        <div id="profile-p">
+        {data.picture && <img src={data.picture}/>}
+        </div>
            </> )
 
     }
