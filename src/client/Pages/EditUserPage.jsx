@@ -16,7 +16,7 @@ function EditUserForm({ user, onSubmit }) {
 
     return (
         <>
-            <div id="edit-header">
+            <div id="header-title">
             <h1>Edit an existing User ({firstName})</h1>
             </div>
 

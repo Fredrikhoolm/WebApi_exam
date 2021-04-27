@@ -17,7 +17,7 @@ body {
     grid-row: 1 ;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #home-button{
@@ -26,6 +26,14 @@ body {
     grid-row: 1  / 1 ;
     align-items: center;
     justify-content: center;
+    background-color: #70A9A1;
+    padding: 5px 15px;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 #list{
@@ -37,6 +45,11 @@ body {
     align-items: center;
     font-size: 25px;
     padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #list-1, #list-2, #list-3, #list-4, #list-5{
