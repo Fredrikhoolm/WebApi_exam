@@ -1,0 +1,172 @@
+body {
+    background-color: powderblue;
+}
+
+.first-page{
+    display: grid;
+    grid-template-columns: 150px 150px auto 150px 150px;
+    grid-template-rows: 100px 100px 33px 33px 33px 100px 100px;
+
+}
+
+#header-home{
+    display: flex;
+    grid-column: 3 ;
+    grid-row: 1 ;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+#home-button{
+
+    display: flex;
+    grid-column: 1 / 1;
+    grid-row: 1  / 1 ;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#list{
+    display: flex;
+    grid-column: 3 ;
+    grid-row: 4;
+    margin: 4px 2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+#list-1{
+    list-style-type: none;
+}
+#list-2{
+    list-style-type: none;
+}
+#list-3{
+    list-style-type: none;
+}
+#list-4{
+    list-style-type: none;
+}
+#list-5{
+    list-style-type: none;
+}
+
+
+#login-header{
+    display: flex;
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#login-button{
+
+    background-color: #4CAF50;
+    grid-column: 3 / 4 ;
+    grid-row: 4 / 6 ;
+
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+#profile-header{
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#google-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 4 ;
+    grid-row: 4 / 6 ;
+    font-size: 35px;
+
+}
+
+#create-header{
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#create-form{
+
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 6 ;
+
+}
+
+#user-header{
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#list-user{
+
+    grid-column: 3  ;
+    grid-row: 3  ;
+    font-size: 30px;
+}
+
+#edit-header{
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#edit-form{
+    grid-column: 3  ;
+    grid-row: 3  ;
+}
+
+#login-chat-form{
+    grid-column: 3 / 4 ;
+    grid-row: 4 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#text-box-chat{
+    display: flex;
+    grid-column: 3 / 4 ;
+    grid-row: 6 / 7 ;
+    align-items: center;
+    justify-content: center;
+
+}
+#chat{
+    overflow: scroll;
+    grid-column: 3;
+    grid-row: 2 / 6;
+
+}

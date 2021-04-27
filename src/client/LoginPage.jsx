@@ -33,8 +33,12 @@ export function LoginPage({identityProvider}){
         window.location.href = authorization_endpoint + "?" + new URLSearchParams(params);
     }
 
-    return <div>
-        <h1>Login</h1>
-        <button onClick={handleLogin}>Login</button>
-    </div>
+    return (
+
+        <>
+        <h1 id="login-header">Login</h1>
+        <button onClick={handleLogin} id="login-button">Login</button>
+        </>
+
+    )
 }

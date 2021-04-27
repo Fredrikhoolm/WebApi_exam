@@ -17,17 +17,14 @@ function ChatLoginPage({ onLogin }) {
         onLogin(username);
     }
     return (
-        <div>
-            <h1>Please log in</h1>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
+        <>
+            <h1 id="login-header">Please log in</h1>
+
+            <form onSubmit={handleSubmit} id="login-chat-form">
+                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}/>
                 <button>Login</button>
             </form>
-        </div>
+        </>
     );
 }
 
@@ -66,9 +63,9 @@ export function ChatView({ username }) {
     }
 
     return (
-        <div>
-            <h1>Chat page</h1>
-            <div>
+        <>
+            <h1 id="login-header">Chat page</h1>
+            <div id="chat">
                 {chatLog.map(({ message, id, username }) => (
                     <div key={id}>
                         <strong>{username}: </strong>
@@ -76,8 +73,8 @@ export function ChatView({ username }) {
                     </div>
                 ))}
             </div>
-            <div>
-                <form onSubmit={handleSubmitMessage}>
+            <div id="text-box-chat">
+                <form onSubmit={handleSubmitMessage} >
                     <input
                         type="text"
                         autoFocus={true}
@@ -87,6 +84,6 @@ export function ChatView({ username }) {
                     <button>Send</button>
                 </form>
             </div>
-        </div>
+        </>
     );
 }

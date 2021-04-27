@@ -1,5 +1,5 @@
 import { BrowserRouter, Link } from "react-router-dom";
-import { Route, Switch } from "react-router";
+import {Redirect, Route, Switch} from "react-router";
 import * as React from "react";
 import { ChatPage } from "./ChatPage";
 import {CreateUserPage} from "./CreateUserPage";
@@ -46,45 +46,57 @@ export function Application() {
 
 
     return (
+
+        <div class="first-page">
+
         <BrowserRouter>
-            <header>
-                <Link to={"/"}>Home</Link>
+            <header id="home-button">
+                <Link to={"/"}> Home </Link>
             </header>
             <Switch>
+
                 <Route path={"/"} exact>
-                    <h1>Home page</h1>
+
+                    <h1 id="header-home">Home page</h1>
+
+                    <div id="list">
                     <ul>
-                        <li>
-                            <Link to={"/profile"}>Profile</Link>
+                        <li id="list-1" >
+                            <Link to={"/profile"} >Profile</Link>
                         </li>
-                        <li>
+                        <li id="list-2">
                             <Link to={"/create"}>Create</Link>
                         </li>
-                        <li>
+                        <li id="list-3">
                             <Link to={"/user"}>User</Link>
                         </li>
-                        <li>
+                        <li id="list-4">
                             <Link to={"/login"}>Login</Link>
                         </li>
-                        <li>
+                        <li id="list-5">
                             <Link to={"/chat"}>Chat</Link>
                         </li>
                     </ul>
+                 </div>
                 </Route>
                 <Route path={"/profile"}>
                     <ProfilePage loadProfile={loadProfile}/>
                 </Route>
                 <Route path={"/create"}>
-                    <CreateUserPage userApi={userApi}/>
+                    {!access_token ? (<Redirect to ={"/"}/>) :
+                        (<CreateUserPage userApi={userApi}/>)}
                 </Route>
                 <Route exact path={"/user"}>
-                    <UserListPage userApi={userApi} />
+                    {!access_token ? (<Redirect to ={"/"}/>) :
+                        (<UserListPage userApi={userApi} />)}
                 </Route>
                 <Route path={"/user/:id/edit"}>
-                    <EditUserPage userApi={userApi}/>
+                    {!access_token ? (<Redirect to ={"/"}/>) :
+                        (<EditUserPage userApi={userApi}/>)}
                 </Route>
                 <Route path={"/chat"}>
-                    <ChatPage />
+                    {!access_token ? (<Redirect to ={"/"}/>) :
+                        (<ChatPage />)}
                 </Route>
                 <Route exact path={"/login"}>
                     <LoginPage identityProvider={googleIdentityProvider}></LoginPage>
@@ -97,5 +109,7 @@ export function Application() {
                 </Route>
             </Switch>
         </BrowserRouter>
+
+        </div>
     );
 }

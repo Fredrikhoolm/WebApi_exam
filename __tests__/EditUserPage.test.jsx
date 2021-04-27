@@ -6,7 +6,7 @@ import { act, Simulate } from "react-dom/test-utils";
 import {EditUserPage} from "../src/client/EditUserPage";
 
 
-const {act} = require("react-dom");
+
 
 async function renderForTest(child) {
     const container = document.createElement("div");
@@ -28,14 +28,14 @@ describe("edit user page", () => {
         );
         expect(container.innerHTML).toMatchSnapshot();
         expect(container.querySelector("h1").textContent).toEqual(
-            "Edit an existing user (Prosessen)"
+            "Edit an existing User (Niklas)"
         );
     });
 
     it("can show loading screen", async () => {
         const getUser = () => new Promise((resolve) => {});
         const container = await renderForTest(
-            <EditUserPage bookApi={{ getUser }} />
+            <EditUserPage userApi={{ getUser }} />
         );
         expect(container.innerHTML).toMatchSnapshot();
         expect(container.querySelector("div").textContent).toEqual("Loading ...");
@@ -46,11 +46,11 @@ describe("edit user page", () => {
             throw new Error("Failed to load");
         };
         const container = await renderForTest(
-            <EditUserPage bookApi={{ getUser}} />
+            <EditUserPage userApi={{ getUser}} />
         );
         expect(container.innerHTML).toMatchSnapshot();
         expect(container.querySelector("div").textContent).toEqual(
-            "Something went wrong: Error: Failed to load"
+            "An error occurredError: Failed to load"
         );
     });
 

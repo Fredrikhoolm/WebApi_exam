@@ -19,9 +19,9 @@ export function ProfilePage({loadProfile}){
         )
     }
 
-    return ( <div>
-        <h1>Profile</h1>
-        <div>{data.name}</div>
-           </div> )
+    return ( <>
+        <h1 id="profile-header">Profile</h1>
+        <div id="google-name">{data.name}</div>
+           </> )
 
     }

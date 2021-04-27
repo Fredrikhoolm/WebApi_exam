@@ -11,14 +11,20 @@ export function CreateUserPage({ userApi: userApi }) {
         await userApi.createUser({ firstName, lastName, email });
     }
 
-    return (
-        <form onSubmit={submit}>
-            <h1>Create new User</h1>
-            <InputField label={"First name"} value={firstName} onChangeValue={setFirstName} />
-            <InputField label={"Last name"} value={lastName} onChangeValue={setLastName} />
-            <InputField label={"Email"} value={email} onChangeValue={setEmail} />
+    return (<>
 
+            <h1 id="create-header">Create new User</h1>
+
+        <form onSubmit={submit} id="create-form">
+
+            <InputField label={"First name"} value={firstName} onChangeValue={setFirstName} />
+            <br/>
+            <InputField label={"Last name"} value={lastName} onChangeValue={setLastName} />
+            <br/>
+            <InputField label={"Email"} value={email} onChangeValue={setEmail} />
+            <br/>
             <button>Submit</button>
         </form>
+        </>
     );
 }
